@@ -39,4 +39,4 @@ class pixArt {
   }
 }
 
-const IMAGES = Object.fromEntries(Object.keys(pixel_art_bitmaps).map(k => [k, pixArt(k).img]))
+const IMAGES = Object.fromEntries(Object.keys(pixel_art_bitmaps).map(k => [k, new pixArt(pixel_art_bitmaps[k]).img]))
