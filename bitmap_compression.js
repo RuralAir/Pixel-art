@@ -240,7 +240,7 @@ function cssToRgba (color) {
  * 
  * Outputs a stringified version of this rectangle map, along with a KA-compatible color string.
 */
-function compress (data) {
+export function compressBitmap (data) {
   // cache the overall dimensions
   const bitmapWidth = data.m[0].length,
   bitmapHeight = data.m.length;
