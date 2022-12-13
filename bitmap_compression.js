@@ -240,7 +240,7 @@ function cssToRgba (color) {
  * 
  * Outputs a stringified version of this rectangle map, along with a KA-compatible color string.
 */
-var compressBitmap = function (data) {
+function compressBitmap (data) {
   // cache the overall dimensions
   const bitmapWidth = data.m[0].length,
   bitmapHeight = data.m.length;
@@ -481,4 +481,4 @@ var compressBitmap = function (data) {
 
   // find the largest pixel size that fits a 400x400 canvas
   Math.floor(400 / Math.max(bitmapHeight, bitmapWidth)) + ",\n}";
-};
+}
