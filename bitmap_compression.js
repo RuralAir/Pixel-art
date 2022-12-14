@@ -221,7 +221,7 @@ function cssToRgba (color) {
   return ret;
 }
 
-/**compressBitmap
+/**bitmap compression function
  * @Author Rur
  * 
  * Accepts a bitmap object in the form, 
