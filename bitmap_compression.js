@@ -484,4 +484,4 @@
     Math.floor(400 / Math.max(bitmapHeight, bitmapWidth)) + ",\n}";
   };
 
-}).call(this);
+}.call(this));
