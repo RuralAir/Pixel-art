@@ -1,4 +1,4 @@
-/**BipartiteGraph
+/**Bipartite graph
  * @Author Rur
  * 
  * Used to store and manipulate data representative of a bipartite graph.
