@@ -1,3 +1,5 @@
+// begin IIFE
+(function () {
 /**Bipartite graph
  * @Author Rur
  * 
@@ -482,3 +484,6 @@ window.compressBitmap = function (data) {
   // find the largest pixel size that fits a 400x400 canvas
   Math.floor(400 / Math.max(bitmapHeight, bitmapWidth)) + ",\n}";
 };
+
+// end IIFE
+})();
