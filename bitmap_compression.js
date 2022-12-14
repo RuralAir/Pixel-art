@@ -275,7 +275,10 @@ window.compressBitmap = function (data) {
       .findLastIndex(r => r
         .includes(char)),
     xOffset = charMap
-      .reduce((prev, cur) => Math.min(prev, cur.findIndex(i => i === char)), Infinity),
+      .reduce((prev, cur) => {
+        let soonestBit = cur.findIndex(i => i === char);
+        return soonestBit !== -1 ? Math.min(prev, soonestBit) : prev;
+      }, Infinity),
     xBound = charMap
       .reduce((prev, cur) => Math.max(prev, cur.findLastIndex(i => i === char)), 0),
 
