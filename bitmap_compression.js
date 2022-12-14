@@ -182,7 +182,7 @@ class Diagonal{
     this.y2 = c2[1];
   }
   intersects(d2){
-    return isBetween(d2.y1, this.y1, this.y2) && isBetween(this.x1, d2.x1, d2.x2);
+    return (d2.y1 >= this.y1 && d2.y1 <= this.y2 && this.x1 >= d2.x1 && this.x1 <= d2.x2);
   } // checks if this (vertical) Diagonal intersects d2 (horizontal) Diagonal
 }
 
