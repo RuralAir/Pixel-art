@@ -219,7 +219,7 @@ function bitCount (n) {
 */
 function cssToRgba (color) {
   let tempElement = document.createElement('div'), rgba = (tempElement.style.color = color, tempElement.style.display = 'none',
-  document.body.appendChild(tempElement), window.getComputedStyle(tempElement).getPropertyValue("color")), [r, g, b, a] = (tempElement.remove(), tempElement = undefined, rgba.match(/[0-9.]+/g).map(Number)), ret = (a = a || 255, [r, g, b, a]);
+  document.body.appendChild(tempElement), window.getComputedStyle(tempElement).getPropertyValue("color")), [r, g, b, a] = (tempElement.remove(), tempElement = undefined, rgba.match(/[0-9.]+/g).map(Number)), ret = ((a = a || 255), [r, g, b, a]);
   return ret;
 }
 
