@@ -1,5 +1,5 @@
 // begin IIFE
-(function () {
+compressBitmap = (function () {
   /**Bipartite graph
    * @Author Rur
    * 
@@ -256,7 +256,7 @@
    * 
    * Outputs a stringified version of this rectangle map, along with a KA-compatible color string.
   */
-  window.compressBitmap = function (data) {
+  return function (data) {
     // cache the overall dimensions
     const bitmapWidth = data.m[0].length,
     bitmapHeight = data.m.length;
